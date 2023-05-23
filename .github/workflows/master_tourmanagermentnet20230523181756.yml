@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'TourManagermentnet20230523181756'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BA51E22707AF4D428425F3BFF6D7571F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C5E743D9899540498BD82A29E5469DE4 }}
           package: .
