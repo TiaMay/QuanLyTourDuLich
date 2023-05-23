@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountType.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Constant.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Destination.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTOEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTOEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRole.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllEmployeeTourGroup_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllPassengers_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetAllTransportTourGroup_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomerById_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomerList_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomersByTourGroupId_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDestinationById_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDestinationList_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmployeeById_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmployeeByTourGroupId_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetEmployeeList_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPassengerById_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPassengerByTourGroupId_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStatusById_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStatusList_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTourList_Result.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tour.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourCategory.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourGroup.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourGroupFee.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourGroupHotel.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourPrice.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourSite.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransportsTourGroup.cs">
+      <DependentUpon>DTOEntities.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DTOEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DTOEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DTOEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DTOEntities.edmx</DependentUpon>
+      <LastGenOutput>DTOEntities.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DTOEntities.edmx.diagram">
+      <DependentUpon>DTOEntities.edmx</DependentUpon>
+    </None>
+    <None Include="DTOEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DTOEntities.edmx</DependentUpon>
+      <LastGenOutput>DTOEntities.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

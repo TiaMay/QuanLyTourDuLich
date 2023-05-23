@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+=======
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+>>>>>>> e80482670ca2b3639b46df6a0484adc5a41a21e8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "QuanLyTourDuLich\GUI.csproj", "{0ABE67E6-41B8-4337-94DE-F887098D4BEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{60691308-02FC-4519-888A-FCC4CD725127} = {60691308-02FC-4519-888A-FCC4CD725127}
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134} = {AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7} = {82EB0AA9-43AE-4169-B059-C137BF2D69C7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{82EB0AA9-43AE-4169-B059-C137BF2D69C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134} = {AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessEntity", "BusinessEntity\BusinessEntity.csproj", "{60691308-02FC-4519-888A-FCC4CD725127}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134} = {AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7} = {82EB0AA9-43AE-4169-B059-C137BF2D69C7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ABE67E6-41B8-4337-94DE-F887098D4BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABE67E6-41B8-4337-94DE-F887098D4BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABE67E6-41B8-4337-94DE-F887098D4BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABE67E6-41B8-4337-94DE-F887098D4BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8CAD86-6A33-42BE-A0DB-5BA2F4C02134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EB0AA9-43AE-4169-B059-C137BF2D69C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60691308-02FC-4519-888A-FCC4CD725127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60691308-02FC-4519-888A-FCC4CD725127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60691308-02FC-4519-888A-FCC4CD725127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60691308-02FC-4519-888A-FCC4CD725127}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
